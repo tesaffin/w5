@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Web App</title>
+    <style>
+    .tiles {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    
+    .tile {
+        width: 100px;
+        height: 100px;
+        background-color: palevioletred;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        cursor: pointer;
+    }
+    
+    .tile a {
+        text-decoration: none;
+        color: #000000;
+    }
+    </style>
+</head>
+<body>
+    <div class="tiles">
+        <div class="tile" id="menu">
+            <a href="#" onclick="$dc.loadMenuItems('Menu');">Menu</a>
+        </div>
+        <div class="tile" id="specials">
+            <a href="specials_page.html">Specials</a>
+        </div>
+        <div class="tile" id="map">
+            <a href="#" onclick="$dc.showMap();">Map</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
